@@ -1,11 +1,17 @@
 function [T] = tension(L, F, gauge)
-%Solve for spoke tension given a fundamental frequency, length, and gauge
+%Solve for spoke tension given a fundamental frequency, length, and gauge:
+% 
 %   USE: In order to use this function, you will need to know the length of
 %   the spoke(s) in millimeters, their gauge, and the fundamental frequency
 %   of the spoke as calculated by DFT analysis. This calculator is designed 
 %   to work for stainless steel spokes only. If you are using butted spokes 
 %   (single, double or triple), input the highest gauge value (as in eg. 
 %   on a 14g/15g/14g spoke, input 15 for gauge).
+%   
+%   INPUTS: (Length [mm], Frequency [Hz], Gauge)
+%   OUTPUTS: Tension (N)
+%   
+%   T = tension(L, F, gauge)
 
 %ensure that gauge input is an integer
 arguments
@@ -23,7 +29,7 @@ L = floor(L);
 
 %Solve for diameter 
 D_g = [2.3 2.0 1.8 1.6 1.5;
-       13 14 15 16 17];
+       13 14 15 16 17]; %matrix matching gauge number to spoke diameter(mm)
 
 for r = 1:length(D_g)
     if gauge == D_g(2,r)
@@ -44,6 +50,7 @@ Ac = (pi*D)/4; %cross sectional area (m^2)
 m = Ac*rho; %kg/m
 
 % Calculate tension
-T = 4*(F^2)*(L^2)*m;
+T = 4*(F^2)*(L^2)*Ac; %temporarily changing the mass term to Ac because the 
+                      %outputs weren't making sense  
 
 end
