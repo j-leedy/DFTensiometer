@@ -40,17 +40,12 @@ end
 
 D = D/1000; %convert to meters
 
-% NOTE: I'm still a bit confused what exactly is meant by mass per unit
-%      length. This makes the most sense both in units and in terms of what
-%      john allen says in the paper, but idk for sure.
 % Calculate mass/unit length
 L = L/1000; %convert L to meters
-rho = ((7.61e3+7.87e3)/2); %kg/m^3
-Ac = (pi*D)/4; %cross sectional area (m^2)
+rho = ((7.61e3 + 7.87e3)/2); %kg/m^3
+Ac = pi*(D/2)^2; %cross sectional area (m^2)
 m = Ac*rho; %kg/m
 
 % Calculate tension
-T = 4*(F^2)*(L^2)*Ac; %temporarily changing the mass term to Ac because the 
-                      %outputs weren't making sense  
-
+T = ((2*F*L)^2)*m;
 end

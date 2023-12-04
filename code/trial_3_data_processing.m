@@ -36,15 +36,16 @@ figure();plot(F,fftshift(abs(fft_worst)))
 %% Filter Stage 1
 % First filter: remove fft of background noise recording from pluck ffts
 
-filter1 = 10*fft(abs(background));
+filter1 = 400*fft(abs(background));
 
 fft_bad = fft_bad - filter1;
 fft_worst = fft_worst - filter1;
 fft_best = fft_best - filter1;
+%%
 
 figure()
-%plot(F,fftshift(abs(fft_bad)));
-%figure();plot(F,fftshift(abs(fft_best)))
+plot(F,fftshift(abs(fft_bad)));
+figure();plot(F,fftshift(abs(fft_best)))
 figure();plot(F,fftshift(abs(fft_worst)))
 
 %% Fiter Stage 2
