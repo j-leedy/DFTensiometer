@@ -1,6 +1,6 @@
 close all; clear; clc
 
-load trial3_data.mat
+load data/'Trial 3'/trial3_data.mat
 bad = bad(:,1);
 best = best(:,1);
 worst = worst(:,1);
