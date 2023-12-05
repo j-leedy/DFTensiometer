@@ -1,4 +1,4 @@
-function F = natural_frequency(sound_file_path, upper_bound, lower_bound)
+function F = natural_frequency(y, Fs, upper_bound, lower_bound)
 % Find the natural frequency of a spoke pluck sound singal given the
 % sound file and an upper and lower bound for filtering.
 %
@@ -12,7 +12,6 @@ function F = natural_frequency(sound_file_path, upper_bound, lower_bound)
 %   band pass filter
 
 % load in sound data, y, and sampling rate, Fs
-[y,Fs] = audioread(sound_file_path);
 
 % Find length of sound data
 N = length(y);
