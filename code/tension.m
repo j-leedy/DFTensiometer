@@ -9,7 +9,7 @@ function [T] = tension(L, F, gauge)
 %   on a 14g/15g/14g spoke, input 15 for gauge).
 %   
 %   INPUTS: (Length [mm], Frequency [Hz], Gauge)
-%   OUTPUTS: Tension (N)
+%   OUTPUTS: Tension (Kgf)
 %   
 %   T = tension(L, F, gauge)
 
@@ -47,5 +47,5 @@ Ac = pi*(D/2)^2; %cross sectional area (m^2)
 m = Ac*rho; %kg/m
 
 % Calculate tension
-T = ((2*F*L)^2)*m;
+T = (((2*F*L)^2)*m)*0.1019716; %output in kgf
 end
