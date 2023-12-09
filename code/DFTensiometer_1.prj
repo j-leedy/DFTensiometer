@@ -1,0 +1,52 @@
+<deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo\code\DFTensiometer_1.prj" location="C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo\code" name="DFTensiometer_1" target="target.webdeploy" target-name="Web App Compiler">
+    <param.appname>DFTensiometer_1</param.appname>
+    <param.intermediate>${PROJECT_ROOT}\DFTensiometer_1</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\DFTensiometer_1</param.files.only>
+    <param.output />
+    <param.checkbox>false</param.checkbox>
+    <param.logdir>${PROJECT_ROOT}\DFTensiometer_1</param.logdir>
+    <param.target.type>subtarget.web.app</param.target.type>
+    <param.user.defined.mcr.options />
+    <param.support.packages />
+    <unset>
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.checkbox />
+      <param.logdir />
+      <param.target.type />
+      <param.user.defined.mcr.options />
+      <param.support.packages />
+    </unset>
+    <fileset.web.main>
+      <file>${PROJECT_ROOT}\DFTensiometer_App.mlapp</file>
+    </fileset.web.main>
+    <fileset.resources />
+    <fileset.depfun />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\DFTensiometer_1" name="DFTensiometer_1.ctf" optional="false">C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo\code\DFTensiometer_1\DFTensiometer_1.ctf</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2023a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
