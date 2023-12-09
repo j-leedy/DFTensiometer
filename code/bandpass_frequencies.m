@@ -15,8 +15,6 @@ end
 %check that spoke length is in mm
 assert(L >= 100, "Make sure spoke length is in millimeters!")
 
-%L = L/1000; %convert to meters
-
 % matrix containing most common spoke gauges, associated diameters, and
 % high and low readings for tension from the TS-1 conversion chart (kg-f)
 tensions = [2.3 2.0 1.8 1.6 1.5;
