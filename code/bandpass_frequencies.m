@@ -1,4 +1,4 @@
-function [F_upper,F_lower] = bandpass(gauge,L)
+function [F_upper,F_lower] = bandpass_frequencies(gauge,L)
 %BANDPASS creates a unique band pass filter for use in the DFTensio app.
 %   Given inputs of spoke gauge and length(mm), this function will 
 %   reverse-calculate the expected range of frequencies using Park Tool's
@@ -15,7 +15,7 @@ end
 %check that spoke length is in mm
 assert(L >= 100, "Make sure spoke length is in millimeters!")
 
-L = L/1000; %convert to meters
+%L = L/1000; %convert to meters
 
 % matrix containing most common spoke gauges, associated diameters, and
 % high and low readings for tension from the TS-1 conversion chart (kg-f)
@@ -46,7 +46,7 @@ m = Ac*rho; %kg/m
 
 % Calculate upper and lower frequency bounds IOT make a unique band pass
 % for the user's wheel
-F_upper = (1/2*L)*sqrt(upper/m); 
-F_lower = (1/2*L)*sqrt(lower/m);
+F_upper = (1/(2*L))*sqrt(upper/m); 
+F_lower = (1/(2*L))*sqrt(lower/m);
 
 end
