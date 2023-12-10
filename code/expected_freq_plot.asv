@@ -34,10 +34,10 @@ ylabel('Expected Frequency (Hz)')
 legend('Lower Bound 14g','Upper Bound 14g')
 hold off
 
-% %plot difference btw upper and lower bounds for all spoke lengths
-% figure()
-% for i = 1:length(Gauge)
-%     plot(L_samples,(FreqsH(i,:)-FreqsL(i,:)))
-%     hold on
-% end
-% hold off
+    %plot difference btw upper and lower bounds for all spoke lengths
+    figure()
+    for i = 1:length(Gauge)
+        plot(L_samples,(FreqsH(i,:)-FreqsL(i,:)))
+        hold on
+    end
+    hold off
