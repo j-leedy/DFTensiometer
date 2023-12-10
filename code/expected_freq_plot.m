@@ -21,8 +21,9 @@ for i = 1:length(Gauge)
     plot(L_samples, FreqsH(i,:));hold on
 end
 xlabel('Spoke Length (mm)')
-ylabel('Upper Bound of Expected Freq. (Hz)')
+ylabel('Expected Frequency (Hz)')
 legend('13g','14g','15g','16g','17g')
+title('Expected Upper Frequency Bound of Stainless Steel Spokes')
 hold off
 
 %plot high v low freqs for 14g spokes
@@ -32,6 +33,7 @@ plot(L_samples,FreqsH(2,:))
 xlabel('Spoke Length (mm)')
 ylabel('Expected Frequency (Hz)')
 legend('Lower Bound 14g','Upper Bound 14g')
+title('Lower vs Upper Frequency Bounds of 14g Spokes')
 hold off
 
 % %plot difference btw upper and lower bounds for all spoke lengths
