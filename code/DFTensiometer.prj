@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration file="C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo\code\DFTensiometer.prj" location="C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo\code" name="DFTensiometer" target="target.mlapps" target-name="Package App">
+  <configuration file="C:\Users\mbelanger\OneDrive - Olin College of Engineering\Documents\Second Year\QEA 3\Projects\Frequnecy Analysis - Final\DFTensiometer\code\DFTensiometer.prj" location="C:\Users\mbelanger\OneDrive - Olin College of Engineering\Documents\Second Year\QEA 3\Projects\Frequnecy Analysis - Final\DFTensiometer\code" name="DFTensiometer" target="target.mlapps" target-name="Package App">
     <param.appname>DFTensiometer</param.appname>
     <param.authnamewatermark />
     <param.email />
@@ -36,16 +36,17 @@
       <file>${PROJECT_ROOT}\DFTensiometer_App.mlapp</file>
     </fileset.main>
     <fileset.depfun>
+      <file>${PROJECT_ROOT}\natural_frequency.m</file>
       <file>${PROJECT_ROOT}\tension.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo" name="code" optional="false">C:\Users\jleedy\Documents\Coursework\FA23\QEA 3\Project 2 - Frequency Analysis\repo\code</file>
+      <file location="C:\Users\mbelanger\OneDrive - Olin College of Engineering\Documents\Second Year\QEA 3\Projects\Frequnecy Analysis - Final\DFTensiometer" name="code" optional="false">C:\Users\mbelanger\OneDrive - Olin College of Engineering\Documents\Second Year\QEA 3\Projects\Frequnecy Analysis - Final\DFTensiometer\code</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023a</root>
+      <root>C:\Program Files\MATLAB\R2022a</root>
       <toolboxes />
     </matlab>
     <platform>
