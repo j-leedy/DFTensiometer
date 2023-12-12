@@ -31,7 +31,7 @@ Alternatively, you can fork and clone this repo. Still navigate to `/code/dftens
 * The length, in mm, of the spoke
 * The wire gauge of the spoke
 
-![App](<figures + images\app-updated.png>)
+![App](<figures + images/app-updated.png>)
 
 Spoke length can be entered in the "Spoke Length" field and spoke gauge can be selected form the "Spoke Gauge" dropdown
 
