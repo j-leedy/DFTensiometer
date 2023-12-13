@@ -43,7 +43,7 @@ Spoke length can be entered in the "Spoke Length" field and spoke gauge can be s
 The sound from a spoke pluck can either be uploaded to the app from an existing file or you can record the sound directly from the app. In either case, the sound should be of a single pluck and the recording does not need to be very long. The recording must start before the pluck and must stop only once the spoke stops producing audible sound.
 
 ### Uploading a Sound
-To upload a sound file, click the "Upload Sound" button and a window will open allowing you to select the sound you want analyzed. Most sound file types should be compatible (m4a, flac, wav, etc).
+To upload a sound file, click the "Upload Sound" button and a window will open allowing you to select the sound you want analyzed. Most sound file types should be compatible (m4a, flac, wav, etc). A comprehensive list of compatible sound formats is available [here](https://www.mathworks.com/help/matlab/import_export/supported-video-file-formats.html).
 
 ### Recording a Sound
 To record from the app, clikc the "Record Sound" button. The box below this button will signify when recording has starting by displaying "Recoridng..." and will turn red. Click the "Record Sound" button again to stop the recording. Note: it may take a few seconds before the recording stops. When the recording does stop, the box will display "Done!" and will turn green. We reccomend using an external mic (as in eg. the mic on a pair of earbuds) to record the sound for improved accuracy. 
