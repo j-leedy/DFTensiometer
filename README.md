@@ -28,6 +28,8 @@ This repository contains 4 folders:
 Alternatively, you can fork and clone this repo. Still navigate to `/code/dftensiometer_installer.exe` to install.
 
 ## How to Use
+Currently, this calculator is only configured to work with stainless steel spokes of gauges 13, 14, 15, 16, and 17. If your wheel uses butted spokes, input the highest gauge (the gauge of the thinnest section). As in eg. if you have a 14/15/14 double butted spoke, input 15 as your spoke's gauge.
+
 3 inputs are needed for this app to work:
 * Sound recording of a spoke pluck
 * The length, in mm, of the spoke
