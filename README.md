@@ -5,6 +5,8 @@ A MATLAB powered tensiometer app capable of determining the tension on a bicycle
 
 This project is part of a frequency analysis project for the Quantitative Engineering Analysis 3 course at Franklin W. Olin College of Engineering.
 
+Learn more at: https://sites.google.com/view/dftensiometer
+
 **Created by: Joe Leedy, Mark Belanger, Peter Schnell**
 
 ## Repository Structure
