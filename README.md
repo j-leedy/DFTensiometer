@@ -46,7 +46,7 @@ The sound from a spoke pluck can either be uploaded to the app from an existing 
 To upload a sound file, click the "Upload Sound" button and a window will open allowing you to select the sound you want analyzed. Most sound file types should be compatible (m4a, flac, wav, etc). A comprehensive list of compatible sound formats is available [here](https://www.mathworks.com/help/matlab/import_export/supported-video-file-formats.html).
 
 ### Recording a Sound
-To record from the app, clikc the "Record Sound" button. The box below this button will signify when recording has starting by displaying "Recoridng..." and will turn red. Click the "Record Sound" button again to stop the recording. Note: it may take a few seconds before the recording stops. When the recording does stop, the box will display "Done!" and will turn green. We reccomend using an external mic (as in eg. the mic on a pair of earbuds) to record the sound for improved accuracy. 
+To record from the app, click the "Record Sound" button. The box below this button will signify when recording has starting by displaying "Recoridng..." and will turn red. The app will record sound for approx. 5 seconds starting from when the button turns red. When the recording does stop, the box will display "Done!" and will turn green. We reccomend using an external mic (as in eg. the mic on a pair of earbuds) to record the sound for improved accuracy. 
 
 ## Calculating a Tension Value
 Once a sound file, spoke length, and spoke gauge has been input into the app, click the "Calculate" button and the app will estimate the tension on the spoke in units kg-F.
